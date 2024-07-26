@@ -6,7 +6,7 @@ const state = {
 const taskModal = document.querySelector(".task__modal__body");
 const taskContents = document.querySelector(".task__contents");
 
-// console.log(taskModel);
+// console.log(taskModel) ;
 
 // getElementById(), getElemByClass(), getElemByTagName()
 //      >> these r used when we want to process thes user data from html in js
@@ -15,7 +15,8 @@ const taskContents = document.querySelector(".task__contents");
 //      >> these r used from js to insert any kind of html txt which would be reflected on the UI
 
 // to create a card on home pg
-const htmlTaskContent = ({ id, title, description, type, url }) => `
+const htmlTaskContent =
+ ({ id, title, description, type, url }) => `
           
   <div class='col-md-6 col-lg-4 mt-3' id=${id} key=${id}>
     <div class='card shadow-sm task__card'>
